@@ -38,21 +38,49 @@ Check that Conda works:
 conda --version
 ```
 
-### Step 3: Go to Your Module Folder
+### Step 3: Get the Module Files
 
-Create a folder named `html-module`, then move into it. This example assumes the folder is in Downloads.
+The files for this module are in the [intro-html repository](https://github.com/iportilla/intro-html). Use either option to put them in a folder named `intro-html` in your Downloads folder.
 
-**Mac:**
+**Option A: Download a ZIP**
+
+1. Open the repository, select **Code**, then select **Download ZIP**.
+2. Unzip the file in your Downloads folder.
+3. Rename the unzipped folder from `intro-html-main` to `intro-html`.
+
+**Option B: Clone with Git**
+
+If you have Git installed, run these commands.
+
+Mac:
 
 ```bash
-cd ~/Downloads/html-module
+cd ~/Downloads
+git clone https://github.com/iportilla/intro-html.git
 ```
 
-**Windows:**
+Windows:
 
 ```bat
-cd %USERPROFILE%\Downloads\html-module
+cd %USERPROFILE%\Downloads
+git clone https://github.com/iportilla/intro-html.git
 ```
+
+Now move into the folder.
+
+Mac:
+
+```bash
+cd ~/Downloads/intro-html
+```
+
+Windows:
+
+```bat
+cd %USERPROFILE%\Downloads\intro-html
+```
+
+> The folder already includes the example files. When a section below says to create a file, you can open the existing one instead. `guess_number.py` contains the starter code for the exercise.
 
 ### Step 4: Create and Activate the Environment
 
@@ -81,7 +109,7 @@ python -m streamlit --version
 
 ### Each Time You Come Back
 
-The environment stays on your computer, so you only create it once. For each new work session, open your terminal, go to your folder, and activate it:
+The environment stays on your computer, so you only create it once. For each new work session, open your terminal, go to your `intro-html` folder as in Step 3, and activate it:
 
 ```bash
 conda activate baim3220-web
@@ -103,17 +131,22 @@ To open the notebook, run `jupyter notebook`. When you're done, stop any running
 
 ### Module Files
 
-By the end, your folder will look like this:
+Your `intro-html` folder contains these files. The two marked files appear after you run the scripts or the notebook.
 
 ```text
-html-module/
-├── hello.html
-├── render_page.py
-├── python_page.html       (created by render_page.py)
-├── sales_report.py
-├── sales_report.html      (created by sales_report.py)
+intro-html/
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── app.py
-└── guess_number.py
+├── click_counter.py
+├── guess_number.py
+├── hello.html
+├── html_with_python.ipynb
+├── python_page.html       (created by render_page.py)
+├── render_page.py
+├── sales_report.html      (created by sales_report.py)
+└── sales_report.py
 ```
 
 ---
